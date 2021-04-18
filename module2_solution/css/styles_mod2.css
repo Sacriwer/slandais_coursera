@@ -3,14 +3,14 @@
  }
 
 h1 {
-	color: green;
+	color: #DAA520; /*gold*/
 	text-align: center;
 	font-style: italic;
-	font-size: 50px;
-	font-style: all;
+	font-weight: 800;
+	font-size: 175%;
+	text-transform: uppercase;
 }
 
-/* Simple Responsive Framework. */
 .row {
   width: 100%;
 }
@@ -19,43 +19,79 @@ h1 {
 	padding: 1px 1px 1px 1px;
 }
 
+.font {
+	font-family: Arial,Helvetic,sans-serif;
+}
+
 .contour {
 	margin: 10px 10px 10px 10px;
 	border: solid black;
-	border-width: 2px;
+	border-width: 1px;
+	height: 275px;
 	/*padding: 10px 10px 10px 10px;*/
 }
 
-#div1 {
-	color: red;
+#recipeTitle1{
+	font-weight: bold;
+	font-size: 125%;
+	padding: 4px 4px 4px 4px;
+	color: #4169E1; /*royal blue*/
+	background-color: #E0FFFF; /*light cyan*/
 }
+
+#recipeTitle2{
+	font-weight: bold;
+	font-size: 125%;
+	padding: 4px 4px 4px 4px;
+	color: #DC143C; /*crimson*/
+	background-color: #FFA07A; /*light salmon*/
+}
+
+#recipeTitle3{
+	font-weight: bold;
+	font-size: 125%;
+	padding: 4px 4px 4px 4px;
+	color: #006400; /*dark green*/
+	background-color: #90EE90; /*light green*/
+}
+
+#recipeText1{
+	background-color: #87CEEB /*sky blue*/
+}
+
+#recipeText2{
+	background-color: #FF6347 /*tomato*/
+}
+
+#recipeText3{
+	background-color: #3CB371 /*medium sea green*/
+}
+
 
 .recipeTitle {
 	margin-top: 0px;
 	float: right;
 	border : solid black;
 	/*border-width: 2px;*/
-	border-bottom-width: 2px;
-	border-left-width: 2px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
 	border-top-width: 0px;
 	border-right-width: 0px;
 	width: 50%;
-	color: white;
-	background-color: #6495ED;
 	text-align: center;
 }
 
 .recipeText {
 	clear : right;
 	padding: 5px 5px 5px 5px;
-	/*float: bottom;*/
+	color: 	white;
 }
 
 /********** Large devices only **********/
 @media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
   }
   .col-lg-1 {
     width: 8.33%;
@@ -99,7 +135,7 @@ h1 {
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
   }
   .col-md-1 {
     width: 8.33%;
@@ -139,11 +175,11 @@ h1 {
   }
 }
 
-/********** msall devices only **********/
+/********** small devices only **********/
 @media (max-width: 767px) {
   .col-sd-1, .col-sd-2, .col-sd-3, .col-sd-4, .col-sd-5, .col-sd-6, .col-sd-7, .col-sd-8, .col-sd-9, .col-sd-10, .col-sd-11, .col-sd-12 {
     float: left;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
   }
   .col-sd-1 {
     width: 8.33%;
