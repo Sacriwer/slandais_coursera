@@ -13,12 +13,8 @@
 <body>
   <header>
     <nav id="header-nav" class="navbar navbar-default">
-      <div class="container">
+      <div class="container"> <!--pull left marche ici mais le bouton n'est plus à drpoite-->
         <div class="navbar-header">
-          <a href="index.html" class="pull-left visible-md visible-lg">
-            <div id="logo-img"></div>
-          </a>
-
           <div class="navbar-brand">
             <a href="index.html"><h1>Food, LLC</h1></a>
           </div>
@@ -27,9 +23,10 @@
 <!--  collapsed ?-->
 <!-- data-toggle : collapse , displays the choice list on click -->
 <!-- data-target : pointer to the choice list-->
-<!-- aria-expanded="false : ?-->
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mychoicelist" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
+<!-- aria-expanded=": for screen readers-->
+<!--aria-sr-only=": screea readers only-->
+          <button type="button" class="navbar-toggle collapsed" style="margin-right: 10px;" data-toggle="collapse" data-target="#mychoicelist" aria-expanded="false">
+            <span class="sr-only">Toggle navigation, generic value</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -42,13 +39,13 @@
         <div id="mychoicelist" class="collapse navbar-collapse" style="margin-bottom: :0px margin-top:0px; padding-bottom: 0px; padding-top: 0px;">
            <ul id="nav-list" class="nav navbar-nav navbar-right">
             <li>
-              <a>Chicken</a>
+              <a class="visible-xs">Chicken</a>
             </li>
              <li>
-              <a>Beef</a>
+              <a class="visible-xs">Beef</a>
             </li>
             <li>
-              <a>Sushi</a>
+              <a class="visible-xs">Sushi</a>
             </li>
             <!--<li id="phone" class="hidden-xs">
               <a href="tel:410-602-5008">
@@ -61,19 +58,21 @@
   </header>
 
 <div>
-  <section class="section-bgk-color">
+
+<h2 class="text-center">Our menu</h2>
+
+<div class="container-fluid">
+  <section class="section-bgk-color col-xs-12">
     <!-- text-center is a bootstrap class-->
     <p class="text-center title-size">Chicken<p>
-    <p class="t1 text-center">
+    <p class="text-center">
      La poule soie est une race de poules très ancienne. Bien que l’endroit exact du développement de la race soit discutable, l’endroit le plus documenté reste la Chine, puis plus tard le Japon. D’autres hypothèses placent l’origine de la race en Indonésie 1, où il existe des races à peau noire tel la Sumatra et la Cemani. Au xiiie siècle, Marco Polo dans ses écrits sur la Chine, parle déjà d'une « poule à peau noire et aux plumes ressemblant à de la soie » 2. En 1599, Ulisse Aldrovandi, écrivain et naturaliste de l’université de Bologne en Italie, publie un traité sur les poules où il parle de poules au plumage « similaire à de la laine » et d’autres « vêtues d'une fourrure comme celle d’un chat noir » 3.
 
 La poule soie est probablement arrivée en Europe par l’intermédiaire de la route de la soie et par le commerce maritime. La race est officiellement reconnue en Amérique du Nord en entrant dans le Standard of Perfection en 1874, dès la première année de publication 3. Dès que la nègre-soie devint commune, de nombreuses légendes furent colportées à leur propos : les éleveurs malhonnêtes déclaraient à leurs acheteurs qu’elles étaient le résultat d’un croisement avec le lapin 2, tandis que les cirques promouvaient leurs « poules à fourrure » 4. 
     </p>
   </section>
-</div>
 
-<div>
-  <section class="section-bgk-color">
+  <section class="section-bgk-color col-xs-12">
     <!-- text-center is a bootstrap class-->
     <p class="text-center title-size">Boeuf<p>
     <p class="text-center">
@@ -88,10 +87,8 @@ La selle et les pieds sont également de couleur beige clair à brun jaune ; le 
 Immédiatement sur la peau se trouve un sous-poil dense formant une laine huit fois plus chaude que la laine de mouton et au moins aussi douce si ce n'est plus que le sous-poil des chèvres du cachemire. Cette couche fait environ 5 cm d'epaisseur et elle appelée qiviuk par les Inuits. Elle couvre l'ensemble de l'animal à l'exception des sabots, des cornes et d'une petite tache entre les narines et les lèvres ; son changement a lieu au cours des mois de mai à juillet. 
     </p>
   </section>
-</div>
 
-<div>
-  <section class="section-bgk-color">
+  <section class="section-bgk-color col-xs-12">
     <!-- text-center is a bootstrap class-->
     <p class="text-center title-size">Sushi<p>
     <p class="text-center">
@@ -102,6 +99,7 @@ Immédiatement sur la peau se trouve un sous-poil dense formant une laine huit f
 鮓 apparait au iie siècle de notre ère dans un autre dictionnaire chinois de la dynastie Han. Il y désigne du poisson conservé dans du sel et du riz fermenté de manière similaire à la conservation utilisée dans le narezushi, un ancêtre du sushi actuel. Avant la consommation du poisson, le riz fermenté du narezushi était jeté. Au iiie siècle, les deux orthographes sont synonymes en chinois. Ces plats disparaissent de la cuisine chinoise pendant la dynastie Ming.
     </p>
   </section>
+
 </div>
 
 

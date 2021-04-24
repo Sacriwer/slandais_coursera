@@ -12,26 +12,20 @@ body {
   border: 0;
 }
 
-#logo-img {
-  background: url('../images/restaurant-logo_large.png') no-repeat;
-  width: 150px;
-  height: 150px;
-  margin: 10px 15px 10px 0;
-}
-
 .navbar-brand {
   padding-top: 25px;
 }
 
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Lora', serif;
-  color: #557c3e;
+  color: #61122f; /* #557c3e; kind of green*/
   font-size: 1.5em;
   text-transform: uppercase;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
   margin-top: 0;
   margin-bottom: 0;
+  position: left;
   line-height: .75;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
@@ -73,22 +67,10 @@ body {
   font-size: 1.8em; /* to redimension the size of the item string*/
 }
 
-#phone {
-  margin-top: 5px;
-}
-#phone a { /* Phone number */
-  text-align: right;
-  padding-bottom: 0;
-}
-#phone div { /* We Deliver */
-  color: #557c3e;
-  text-align: right;
-  padding-right: 15px;
-}
-
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #61122f; /*color the button and all its items in bordeaux */
 }
+
 .navbar-header button.navbar-toggle {
   clear: both;
   margin-top: -30px;
@@ -96,17 +78,34 @@ body {
 
 .section-bgk-color {
   background-color: #f6b319;
+  /*padding : 10px;*/
+  /*margin: 10px 10px 10px 10px;*/
 }
 
 .title-size{
   font-size: 1.5em;
 }
 
+h2{
+  color : #f6b319;
+}
+
 div section{
   color : #951C49;
-  padding : 10px;
-  margin: 10px;
+  padding : 15px;
+  margin-top : 20px;
+  margin-bottom: 20px;
+  /*margin-left: 10px;
+  margin-right:10px;
+  margin-top:40px;
+  margin-bottom: 40px;*/
 }
+
+/*section{
+  margin: 10px 20px 30px 40px;
+  color:blue;
+  padding-right: 150px;
+}*/
 
 li a {
   color : green;
