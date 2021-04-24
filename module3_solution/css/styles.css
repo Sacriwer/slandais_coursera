@@ -1,13 +1,12 @@
 body {
   font-size: 16px;
   color: #fff;
-  background-color: #61122f;
+  background-color: #008080; /* #61122f;*/
   font-family: 'Oxygen', sans-serif;
 }
 
-/** HEADER **/
 #header-nav {
-  background-color: #f6b319;
+  background-color: #FAFAD2;
   border-radius: 0;
   border: 0;
 }
@@ -18,68 +17,40 @@ body {
 
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Lora', serif;
-  color: #61122f; /* #557c3e; kind of green*/
+  color: #008B8B; /* #557c3e; kind of green*/
   font-size: 1.5em;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
-  margin-bottom: 0;
-  position: left;
+  margin-top: 0; /* to keep*/
+  margin-bottom: 0; /* to keep*/
+  position: center;
   line-height: .75;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
-  text-decoration: none;
-}
-.navbar-brand p { /* Kosher cert */
-  color: #000;
-  text-transform: uppercase;
-  font-size: .7em;
-  margin-top: 15px;
-}
-.navbar-brand p span { /* Star-K */
-  vertical-align: middle;
+  text-decoration: none; /*since food llc is a link, this remove the automatic underline
 }
 
-#nav-list {
-  margin-top: 10px; /* to vertically separate the items */
-}
 #nav-list a {
-  color:  #951C49; /* bordeaux */
-  text-align: center; /*center the items*/
+  color:  #008B8B; /* bordeaux */
+  font-size: 1.1em;
 }
-#nav-list p {
 
-  /*border : solid #951C49 1px;*/ /*added by Seb*/
-}
 #nav-list a:hover {
   background: #E7E7E7; /* change the item background color on hover*/
 }
 
 #nav-list li{
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid lightgrey; 
   margin :0px;
 }
 
-#nav-list a span {
-   /* display: inline-block;
-  zoom:1;*/
-  font-size: 1.8em; /* to redimension the size of the item string*/
-}
-
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f; /*color the button and all its items in bordeaux */
-}
-
-.navbar-header button.navbar-toggle {
-  clear: both;
-  margin-top: -30px;
+  border: 1px solid #008B8B; /*#61122f;*/ /*color the button and all its items in bordeaux */
 }
 
 .section-bgk-color {
-  background-color: #f6b319;
-  /*padding : 10px;*/
-  /*margin: 10px 10px 10px 10px;*/
+  background-color: #FAFAD2;
 }
 
 .title-size{
@@ -87,29 +58,15 @@ body {
 }
 
 h2{
-  color : #f6b319;
+  color : #FAFAD2;
+  font-size: 3em;
 }
 
 div section{
-  color : #951C49;
+  color : #008B8B;
   padding : 15px;
   margin-top : 20px;
-  margin-bottom: 20px;
-  /*margin-left: 10px;
-  margin-right:10px;
-  margin-top:40px;
-  margin-bottom: 40px;*/
+  margin-bottom: 10px;
 }
 
-/*section{
-  margin: 10px 20px 30px 40px;
-  color:blue;
-  padding-right: 150px;
-}*/
-
-li a {
-  color : green;
-}
-
-/* END HEADER */
 
