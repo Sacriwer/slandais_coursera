@@ -28,7 +28,7 @@ body {
   line-height: .75;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
-  text-decoration: none; /*since food llc is a link, this remove the automatic underline
+  text-decoration: none; /*sinc e food llc is a link, this remove the automatic underline
 }
 
 #nav-list a {
