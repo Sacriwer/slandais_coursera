@@ -42,7 +42,6 @@ body {
 
 #nav-list li{
   border-bottom: 1px solid lightgrey; 
-  margin :0px;
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
@@ -67,6 +66,10 @@ div section{
   padding : 15px;
   margin-top : 20px;
   margin-bottom: 10px;
+}
+
+section > div {
+  margin-bottom: 20px;
 }
 
 
