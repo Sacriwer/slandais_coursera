@@ -3,10 +3,6 @@
 
 // STEP 6: Wrap the entire contents of SpeakGoodBye.js inside of an IIFE
 // See Lecture 52, part 2
-(function(dindow) {
-endWord = "Good Bye"
-}
-	)(window);
 
 
 // STEP 7: Create an object, called 'byeSpeaker' to which you will attach
@@ -15,13 +11,15 @@ endWord = "Good Bye"
 // var byeSpeaker =
 
 ( function(dindow) {
+
+	speakWord = "Good Bye"
 	var byeSpeaker = {};
 	byeSpeaker.speak = function (name) {
-  console.log(window.endWord + " " + name);
-}
+		console.log(speakWord + " " + name);
+	}
 	window.byeSpeaker = byeSpeaker
 }
-	)(window);
+)(window);
 
 
 // DO NOT attach the speakWord variable to the 'byeSpeaker' object.

@@ -36,34 +36,25 @@ WARNING!!! WARNING!!!
 
 //var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
-(function(window){
-window.names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
-})(window);
+(function(){
+  names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
-//var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+  for (var nameIndex in names) {
+    var word = names[nameIndex];
+    var firstLetter = (word.charAt(0)).toLowerCase();
+    if (firstLetter === 'j') {
+      byeSpeaker.speak(word)
+    } else {
+     helloSpeaker.speak(word)
+   }
+ }
+}
+)();
 
 // STEP 10:
 // Loop over the names array and say either 'Hello' or "Good Bye"
 // using either the helloSpeaker's or byeSpeaker's 'speak' method.
 // See Lecture 50, part 1
-
-/*for (var i = 0; i < names.length; i++) {
-  console.log("Hello " + names[i]);
-}*/
-
-for (var name in names){
- // helloSpeaker.speak(names[name])
-//console.log(names[name])
-};
-
-//console.log(window.byeSpeaker)
-
-for (var name in names){
-  //window.byeSpeaker.speak(names[name])
-//console.log(names[name])
-};
-
-for (var nameIndex in names) {
 
   // STEP 11:
   // Retrieve the first letter of the current name in the loop.
@@ -73,17 +64,9 @@ for (var nameIndex in names) {
   // to lower case character 'j' afterwards.
   // Look up these methods on Mozilla Developer Network web site if needed.
   //console.log(names[nameIndex]);
-  var word = window.names[nameIndex];
-   var firstLetter = (word.charAt(0)).toLowerCase();
 
   // STEP 12:
   // Compare the 'firstLetter' retrieved in STEP 11 to lower case
   // 'j'. If the same, call byeSpeaker's 'speak' method with the current name
   // in the loop. Otherwise, call helloSpeaker's 'speak' method with the current
   // name in the loop.
-  if (firstLetter == "j") {
-    byeSpeaker.speak(word)
-  } else {
-     helloSpeaker.speak(word)
-  }
-};

@@ -4,6 +4,15 @@
 (function (window){
 	var speakWord = "Hello";
 	window.speakWord = speakWord
+	
+	var helloSpeaker = {
+		speak : function (name) {
+			console.log(speakWord + " " + name);
+		}
+	};
+
+	window.helloSpeaker = helloSpeaker
+
 })(window);
 
 
@@ -12,16 +21,6 @@
 // See Lecture 52, part 1
 // var helloSpeaker =
 
-console.log("SLA Step 3");
-
-var helloSpeaker = {
-	 radius : 12,
-   speak : function (name) {
-  console.log(window.speakWord + " " + name);
-}
-
-};
-console.log("SLA Step 4");
 
 // DO NOT attach the speakWord variable to the 'helloSpeaker' object.
 //var speakWord = "Hello";
